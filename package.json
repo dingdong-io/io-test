@@ -1,0 +1,24 @@
+{
+  "name": "io-test"
+  , "version": "0.0.0"
+  , "repository": {
+    "type": "git"
+    , "url": "https://github.com/dingdong-io/io-test"
+  }
+  , "description": "主分支,加速自己开发node模块的构建工具;demo分支,新建模块的模板"
+  , "dependencies": {
+    "io-global": "*"
+  }
+  , "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0"
+    ,"pm2":"*"
+  }
+  , "main": "dist/main.js"
+  , "author": "dingdong"
+  , "license": "MIT"
+  , "bugs": {
+    "url": "https://github.com/dingdong-io/io-test/issues"
+  }
+  , "homepage": "https://github.com/dingdong-io/io-test#readme"
+  , "scripts": {}
+}
