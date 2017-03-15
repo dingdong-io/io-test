@@ -1,6 +1,4 @@
-{% raw %}
-Hello {{ sensitive }}
-{% endraw %}
+
 
 
 # io-test  
@@ -32,3 +30,63 @@ npm下载可能受限,翻墙也较慢.推荐国内使用cnpm,在命令行下输�
 请反馈bug.
 
 ssh test 2
+
+# 测试hexo
+
+{% raw %}
+Hello {{ sensitive }}
+{% endraw %}
+
+# 测试注释
+
+你可以用下面这些：
+
+[comment]: <> (This is a comment, it will not be included)
+[comment1]: <> (in  the output file unless you use it in)
+[]: <> (a reference style link.)
+[3]: <> (This is also a comment.)
+[//]: # (This may be the most platform independent comment)
+我决定以后用：
+
+[^_^]:
+    commentted-out contents
+    should be shift to right by four spaces (`>>`).
+亲测可用（Pandoc、GitHub、简书、作业部落）。十分完美，除了这个 warning：
+```
+pandoc: Duplicate note reference `^' "source" (line 85, column 1)
+如果你想测试一下你的 Markdown 能不能这么用，这是一点测试的文字：
+```
+a
+
+[comment]
+    b
+[comment]
+
+c
+
+d
+显示的 a c d 应当间隔一样长。
+
+@delogn 的评论：
+
+[^_^]:1
+
+[>_<]: <> (注释)
+    2
+
+[>_>]:
+    3
+    
+多行只能
+<!--
+这样注释
+-->
+
+{% comment %} 
+    These commments will not include inside the source.
+{% endcomment %}
+
+这是一种偏方,以链接形式,
+[](Comment text goes here)
+
+
